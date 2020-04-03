@@ -27,11 +27,11 @@ const num = numGen(7) //num.next()
 //     console.log(l)
 // }
 
-function* iter(n=10) {
+function* iter(n) {
     for (let i = 0; i < n; i++){
         yield i
     }
 }
-for( let n of iter(6)) {
+for( let n of iter(10)) {
         console.log(n)
 }
