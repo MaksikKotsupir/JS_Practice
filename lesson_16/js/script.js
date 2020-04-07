@@ -29,3 +29,11 @@ console.log(strJoin)
 const massSlice = mass.slice(0,2)
 const strSlice = str.slice(0,6)
 console.log(massSlice, strSlice)
+
+/// splice() - дозволяє додавати і видаляти елемент( перший параметр - це індекс елемента в масиві, другий означає скільки елементів потрібно видалити, а третій параметр це елемент який потрібно додати)
+var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(3, 1);
+console.log(removed)
+console.log(myFish)
+var removed = myFish.splice(3, 0, 'Shark');
+console.log(myFish)
